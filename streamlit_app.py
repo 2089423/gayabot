@@ -18,7 +18,7 @@ for message in st.session_state.messages:
         st.markdown(content)
 
 # Collect user input for symptoms
-user_input = st.chat_input("Describe your question")
+user_input = st.chat_input("Describe your symptoms")
 
 # Function to get a response from OpenAI with health advice
 def get_response(prompt):
