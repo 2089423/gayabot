@@ -5,7 +5,7 @@ from openai import OpenAI
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 # Title of the app
-st.title("ApplicationSupport")
+st.title("EmergencyResponse")
 
 # Initialize session state for chat history
 if "messages" not in st.session_state:
@@ -18,7 +18,7 @@ for message in st.session_state.messages:
         st.markdown(content)
 
 # Collect user input for symptoms
-user_input = st.chat_input("Describe your issues here...")
+user_input = st.chat_input("Describe your issue here...")
 
 # Function to get a response from OpenAI with health advice
 def get_response(prompt):
